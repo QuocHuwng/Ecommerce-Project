@@ -31,9 +31,8 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
         return;
     }
 
-    // Lưu trạng thái đăng nhập nếu cần (tùy theo yêu cầu)
     alert("Đăng nhập thành công!");
-    window.location.href = "../index.html";
+    window.location.href = "..//html/danhMuc.html";
 });
 
 function updateMobile() {

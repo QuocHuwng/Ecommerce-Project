@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="../css/dangKy.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng ký tài khoản</h2>
+        <p>Đăng ký tài khoản để sử dụng dịch vụ</p>
+        <form id="registerForm">
+            <div class="name-fields">
+                <div>
+                    <label>Họ và tên đệm</label>
+                    <input id="lastname" type="text" />
+                    <span class="error-message" id="error-lastname"></span>
+                </div>
+                <div>
+                    <label>Tên</label>
+                    <input id="firstname" type="text" />
+                    <span class="error-message" id="error-firstname"></span>
+                </div>
+            </div>
+
+            <label>Email</label>
+            <input id="email" type="email" placeholder="you@company.com" />
+            <span class="error-message" id="error-email"></span>
+
+            <label>Mật khẩu</label>
+            <input id="password" type="password" />
+            <span class="error-message" id="error-password"></span>
+
+            <label>Xác nhận mật khẩu</label>
+            <input id="confirmPassword" type="password" />
+            <span class="error-message" id="error-confirm"></span>
+
+            <div class="terms">
+                <input class="checkbox" type="checkbox" id="terms" />
+                <label for="terms">Bạn đồng ý với <a href="#">chính sách và điều khoản</a></label>
+            </div>
+            <span class="error-message" id="error-terms"></span>
+
+            <button type="submit">Đăng ký</button>
+        </form>
+
+        <p class="login-link">
+            Bạn đã có tài khoản? <a href="./dangNhap.html">Đăng nhập</a>
+        </p>
+    </div>
+ <script src="../js/dangKy.js"></script>
+</body>
+</html>

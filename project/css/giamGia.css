@@ -1,0 +1,86 @@
+.comment {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    height: 600px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card-product {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    background-color: #F6F6F6;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.card-product img {
+    width: 100%;
+    height: 12rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.card-product h2 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.card-product p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.card-product button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.card-product .fa-heart {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #9ca3af;
+}

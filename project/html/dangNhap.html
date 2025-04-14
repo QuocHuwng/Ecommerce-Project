@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="../css/dangNhap.css">
+</head>
+
+
+    <div class="container">
+        <h2>Đăng nhập</h2>
+        <p class="description">Đăng nhập tài khoản để sử dụng hệ thống quản lý.</p>
+        <form id="loginForm">
+            <label>Email</label>
+            <input id="email" type="email" placeholder="you@company.com" />
+            <span class="error-message" id="error-email"></span>
+            <label>Mật khẩu</label>
+            <input id="password" type="password" placeholder="" />
+            <span class="error-message" id="error-password"></span>
+            <div class="options">
+                <div class="remember">
+                    <input class="checkbox" type="checkbox" id="remember" />
+                    <label for="remember">Nhớ tài khoản</label>
+                </div>
+                <a href="#">Quên mật khẩu?</a>
+            </div>
+            <div class="terms">
+                <input type="checkbox" id="terms" />
+                <label for="terms">Bạn đồng ý với <a href="#">chính sách và điều khoản</a></label>
+            </div>
+            <span class="error-message" id="error-login"></span>
+            <button type="submit">Đăng nhập</button>
+        </form>
+        <p class="login-link">Bạn chưa có tài khoản? <a href="./dangKy.html">Đăng ký</a></p>
+    </div>
+<script src="../js/dangNhap.js"></script>
+</body>
+
+</html>

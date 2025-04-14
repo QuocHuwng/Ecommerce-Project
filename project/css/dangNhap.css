@@ -1,0 +1,145 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+}
+
+.container {
+    padding: 32px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 448px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.container p {
+    color: #4b5563;
+    margin-bottom: 24px;
+}
+
+.container label {
+    display: block;
+    color: #374151;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.container button {
+    width: 100%;
+    background-color: #3b82f6;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.container button:hover {
+    background-color: #2563eb;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    margin-bottom: 16px;
+    display: none;
+}
+
+.terms input {
+    margin: 0;
+}
+
+.login-link {
+    margin-top: 16px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 4%;
+    margin-bottom: 16px;
+}
+
+.name-fields div {
+    width: 48%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 360px;
+        padding: 24px;
+    }
+
+    .name-fields {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .name-fields div {
+        width: 100%;
+    }
+
+    .options {
+        display: none;
+    }
+
+    .terms {
+        display: flex;
+    }
+}
+
+.container .remember {
+    display: flex;
+    padding-top: 9px;
+    align-items: center;
+    position: relative;
+}
+
+.checkbox {
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: -12px;
+    margin-bottom: 12px;
+    display: block;
+}

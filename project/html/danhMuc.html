@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Danh Muc</title>
+    <link rel="stylesheet" href="../css/danhMuc.css">
+    <link rel="stylesheet" href="../css/lopPhu.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h4><img src="../img/logo2.png" alt="">Ecommerce</h4>
+        <a href="#"> <img src="../img/Home.png" alt="">Thống kê</a>
+        <a href="#"> <img src="../img/danhMuc.png" alt="">Danh mục</a>
+        <a href="./sanpham.html"> <img src="../img//sanpham.png" alt="">Sản phẩm</a>
+    </div>
+
+    <div class="content">
+        <div class="topbar">
+            <img src="../img/chuong.png" alt="" class="chuong">
+            <img src="../img/Ellipse 6.png" alt="Avatar" id="accountBtn" class="avatar">
+        </div>
+        <!-- Overlay -->
+        <div id="overlay" class="overlay"></div>
+
+        <!-- Popup thông tin tài khoản -->
+        <div id="accountPopup" class="account-popup">
+            <p><strong>Tên người dùng:</strong> Nguyễn Văn A</p>
+            <button id="logoutBtn">Đăng xuất</button>
+        </div>
+        <!-- dangXuat -->
+        <div id="logoutOverlay" class="overlay" style="display: none;">
+            <div class="popup">
+                <p>Bạn có chắc chắn muốn đăng xuất không?</p>
+                <button id="confirmLogout">Đăng xuất</button>
+                <button id="cancelLogout">Hủy</button>
+            </div>
+        </div>
+        <div class="d-flex">
+            <h2>Danh mục</h2>
+            <button class="btn btn-primary mb-3">Thêm mới danh mục</button>
+        </div>
+        <div class="d-flex-2">
+            <select class="contact" name="" id="">
+                <option value="">Tất cả</option>
+                <option value="1">Đang hoạt động</option>
+                <option value="2">Ngừng hoạt động</option>
+            </select>
+            <input type="text" class="search search-category form-control mb-3" placeholder="Tìm kiếm danh mục theo tên">
+            <i class="fas fa-search"></i>
+        </div>
+        <table class="table" cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Mã danh mục <img src="../img/arrow-down.png" alt=""></th>
+                    <th>Tên danh mục <img src="../img/arrow-down.png" alt=""></th>
+                    <th>Trạng thái</th>
+                    <th class="chucNang">Chức năng</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+
+        </table>
+    </div>
+
+    <div class="pagination">
+        <a href="#"><i class="fas fa-chevron-left"></i></a>
+        <a class="page-link" href="#">1</a>
+        <a class="page-link" href="#">2</a>
+        <a class="page-link" href="#" class="active">3</a>
+        <a class="page-link" href="#">4</a>
+        <a class="page-link" href="#">5</a>
+        <a class="page-link" href="#">...</a>
+        <a class="page-link" href="#">20</a>
+        <a href="#"><i class="fas fa-chevron-right"></i></a>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="add">
+        <div class="header">
+            <h2>Thêm mới danh mục</h2>
+            <i class="fas fa-times"></i>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="category-code">Mã danh mục <span class="required">*</span></label>
+                <input type="text" id="category-code">
+            </div>
+            <div class="form-group">
+                <label for="category-name">Tên danh mục <span class="required">*</span></label>
+                <input type="text" id="category-name">
+            </div>
+            <div class="status-group">
+                <label>Trạng thái</label>
+                <div class="status-options">
+                    <input id="active" name="status" type="radio" checked>
+                    <label for="active">Đang hoạt động</label>
+                    <input id="inactive" name="status" type="radio">
+                    <label for="inactive">Ngừng hoạt động</label>
+                </div>
+            </div>
+            <hr>
+            <div class="actions">
+                <button type="button" class="cancel-btn">Hủy</button>
+                <button type="submit" class="submit-btn">Thêm</button>
+            </div>
+        </form>
+    </div>
+    <!-- Lớp nền mờ -->
+    <div class="overlay"></div>
+
+    <!-- Form Cập nhật danh mục -->
+    <div class="update">
+        <div class="header">
+            <h2>Cập nhật danh mục</h2>
+            <i class="fas fa-times close-update"></i>
+        </div>
+        <form id="addCategoryForm">
+            <div class="form-group">
+                <label for="update-category-code">Mã danh mục <span class="required">*</span></label>
+                <input type="text" id="update-category-code">
+            </div>
+            <div class="form-group">
+                <label for="update-category-name">Tên danh mục <span class="required">*</span></label>
+                <input type="text" id="update-category-name">
+            </div>
+            <div class="status-group">
+                <label>Trạng thái</label>
+                <div class="status-options">
+                    <input id="update-active" name="update-status" type="radio" checked>
+                    <label for="update-active">Đang hoạt động</label>
+                    <input id="update-inactive" name="update-status" type="radio">
+                    <label for="update-inactive">Ngừng hoạt động</label>
+                </div>
+            </div>
+            <hr>
+            <div class="actions">
+                <button type="button" class="cancel-update">Hủy</button>
+                <button type="submit" class="submit-btn">Lưu</button>
+            </div>
+        </form>
+    </div>
+    <div id="error-message" class="error-message" style="display: none;"></div>
+<script src="../js/danhMuc.js"></script>
+</body>
+
+</html>
